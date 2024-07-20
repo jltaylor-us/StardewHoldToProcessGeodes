@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- manifest builder properties -->
+  <PropertyGroup>
+    <UniqueId>jltaylor-us.HTPG</UniqueId>
+    <Name>Hold to Process Geodes</Name>
+    <Version>1.0.0</Version>
+    <Authors>Jamie Taylor</Authors>
+    <Description>Hold the left mouse button to repeatedly process geodes</Description>
+    <MinimumApiVersion>4.0</MinimumApiVersion>
+    <UpdateKeys>Nexus:26189;GitHub:jltaylor-us/StardewHoldToProcessGeodes</UpdateKeys>
+  </PropertyGroup>
+
+  <!-- build properties -->
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Leclair.Stardew.ModManifestBuilder" Version="2.3.1" />
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Link>LICENSE</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
